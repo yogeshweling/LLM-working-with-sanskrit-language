@@ -1,0 +1,37 @@
+<title>Lalita Sahasranama Marked Script</title>
+<style>
+@page{size:A4;margin:20mm 16mm 18mm 16mm}
+html,body{margin:0;padding:0;background:#fff;color:#1b1a22}
+body{font-family:'FreeSerif','Noto Serif Devanagari','Mangal',serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1{font-size:24pt;text-align:center;margin:0 0 4pt;font-weight:700}
+.sub{font-family:'FreeSans',sans-serif;font-size:9.5pt;text-align:center;color:#555;margin:0 0 10pt}
+.legend{display:flex;justify-content:center;gap:16pt;flex-wrap:wrap;font-family:'FreeSans',sans-serif;font-size:9.5pt;margin:0 0 6pt;align-items:center}
+.legend .it{display:flex;gap:6pt;align-items:center}
+.sw{font-family:'FreeSerif',serif;font-size:15pt;padding:0 3pt}
+.note{font-family:'FreeSans',sans-serif;font-size:8.5pt;color:#555;margin:6pt 0 0;line-height:1.4}
+h2{font-size:16pt;margin:16pt 0 4pt;padding-bottom:3pt;border-bottom:.6pt solid #bbb;break-after:avoid}
+h3{font-size:13pt;color:#555;margin:10pt 0 2pt;font-weight:400;break-after:avoid}
+.head{font-size:14pt;text-align:center;margin:8pt 0}
+.lines{display:flex;flex-direction:column}
+.ln{display:block;font-size:15pt;line-height:1.95}
+.colo{align-items:center;text-align:center;margin-top:10pt}
+.verses{list-style:none;margin:0;padding:0}
+.verses li{display:grid;grid-template-columns:24pt 1fr;gap:6pt;padding:5pt 0;border-bottom:.4pt solid #ddd;break-inside:avoid}
+.no{font-family:'FreeSans',sans-serif;font-size:8.5pt;color:#777;text-align:right;padding-top:9pt}
+.mp{color:#c2185b;font-weight:700}
+.sy{background:#ffe45c;border-radius:2pt;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.dg{text-decoration:underline;text-decoration-color:#0f9d58;text-decoration-thickness:1.6pt;text-underline-offset:2.5pt;text-decoration-skip-ink:none}
+.us{font-weight:inherit}
+.w{max-width:100%}
+</style>
+<div class="w" id="root">
+  <h1>श्रीललितासहस्रनामस्तोत्रम्</h1>
+  <p class="sub">Lalita Sahasranama &mdash; letter marking</p>
+  <div class="legend">
+    <span class="it"><span class="sw mp">ख घ भ ष ह</span>Mahaprana</span>
+    <span class="it"><span class="sw sy">क्ष स्त</span>Samyuktakshara</span>
+    <span class="it"><span class="sw dg">दी</span><span class="sw sy" style="margin-left:-4pt">क्षा</span>Dirgha Samyukta = long letter just before a conjunct</span>
+  </div>
+  <p class="note">Mahaprana: the aspirates ख घ छ झ ठ ढ थ ध फ भ and the two ushma letters ष and ह (श and स are not marked). A conjunct containing one of these is shown pink as a whole. Samyuktakshara: every conjunct, including reph forms. Dirgha Samyukta: the long-vowel letter (आ ई ऊ ॠ ए ऐ ओ औ, whether standing alone or as a vowel sign on a consonant) that comes immediately before a conjunct; the conjunct itself is only yellow. The reading is continuous, so a long letter at the end of a word or before a hyphen counts if the next word begins with a conjunct. Totals: Mahaprana {{MP}}, Samyuktakshara {{SY}}, Dirgha Samyukta {{DG}}.</p>
+{{BODY}}
+</div>
