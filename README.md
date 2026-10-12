@@ -1,4 +1,4 @@
-# Marking Sanskrit text by pronunciation rules, with a language model's help
+# Marking Sanskrit text by pronunciation rules, using a language model (Claude in this case)
 
 A practical experiment to explore possibility of making specific linguistic features and the knowledge preserved in texts easier to be available for language usage.
 
