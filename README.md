@@ -6,7 +6,9 @@ Read the full write-up: **[Substack link]**
 
 ## 1. What this demonstrates
 
-How an LLM such as Claude can work with a language like Sanskrit and produce useful work by applying rules you give it: here, visual marking of letters for chanting practice. The test text was the Lalita Sahasranama. The experiment covers source recovery and annotation only. It does not show general Sanskrit proficiency.
+**The problem.** Sanskrit has language-specific rules in which pronunciation depends on where certain letters fall: an aspirated consonant carries extra breath, and conjuncts (two or more consonants joined) change how the syllable before them is read. A reader who does not know these rules can easily mispronounce the script. This project marks those places in the text with colors and underlining, so the script is easier to pronounce.
+
+**The question.** Can a language model such as Claude work with a language like Sanskrit and produce useful work by applying rules you give it? Here, Claude proposed the decoding map and wrote the programs, and the programs applied the rules. The three marking conventions (below) are the author's own, not a standard. The test text was the Lalita Sahasranama. The experiment covers source recovery and annotation only. It does not show general Sanskrit proficiency.
 
 ## 2. What is provided
 
