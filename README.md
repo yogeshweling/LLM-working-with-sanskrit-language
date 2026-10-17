@@ -1,14 +1,14 @@
-# Can a Language Model Apply Sanskrit Pronunciation Rules? Marking Sanskrit text by pronunciation rules, with a language model's help. 
+# Can a Language Model Apply Sanskrit Pronunciation Rules?
 
 
-A practical experiment to explore possibility of making specific linguistic features and the knowledge preserved in texts easier to be available for language usage. An Experiment with the Lalita Sahasranama.
+A practical experiment in using a language model to build a small tool for Sanskrit text, tested on the Lalita Sahasranama. Claude wrote the programs in this repo; plain scripts, not the model, apply the rules every time.
 
-Who this article is for
+## Who this is for
 
 This is for Sanskrit scholars, teachers, learners and readers interested in the language, as well as people researching or building language models and their applications. Sanskrit readers can examine the text and marking conventions; AI readers can examine how instructions became an executable tool and where errors or uncertainty entered the process. I asked Claude to turn an old-font PDF of the Lalita Sahasranama into color-marked Devanagari using three pronunciation-related rules I defined. The model recognized the text well enough to decode a legacy font that extracted as Latin-looking gibberish, then wrote the programs that decoded and marked the text.
 
 
-Why I ran this experiment
+## Why I ran this experiment
 I wanted to explore whether a language model could help make language-specific rules visible and usable. Many languages carry information through pronunciation, spelling, grammatical structure and other conventions that a short translation or paraphrase may not capture. My working belief was that explicit rules, examples and tools could help make some of those features accessible. I wanted to investigate how that would work in practice.
 
 
@@ -18,7 +18,7 @@ Read the full write-up: **[In Process]**
 
 **The problem.** Sanskrit has language-specific rules in which pronunciation depends on where certain letters fall: an aspirated consonant carries extra breath, and conjuncts (two or more consonants joined) change how the syllable before them is read. A reader who does not know these rules can easily mispronounce the script. This project marks those places in the text with colors and underlining, so the script is easier to pronounce.
 
-**The question.** Could a model interpret the rules I supplied, translate them into a useful transformation, and preserve the original text? Where would it need correction? More broadly, how does a text-generating model work with linguistic features that require precise treatment? This experiment explored source recovery and annotation. It did not establish general Sanskrit proficiency or test interpretation of the knowledge within the hymn.
+**The question.** Could a model interpret the rules I supplied, translate them into a useful transformation, and preserve the original text? Where would it need correction? More broadly, how does a text-generating model work with linguistic features that require precise treatment?
 
 I used the three language rules defined below, based on my understanding of Sanskrit grammar and language structure. There are many other rules that are not considered here. I used the Lalita Sahasranama as the Sanskrit text and applied the rules to it. The experiment covers source recovery and annotation only. It does not show general Sanskrit proficiency.
 
