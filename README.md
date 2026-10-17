@@ -1,19 +1,6 @@
-# Marking Sanskrit text by pronunciation rules, using a language model (Claude in this case)
+# Marking Sanskrit text by pronunciation rules, with a language model's help
 
-A practical experiment to explore possibility of making specific linguistic features and the knowledge preserved in texts easier to be available for language usage.
-
-Many languages carry features through pronunciation, spelling and grammatical structure that a short translation or paraphrase may not capture. I wanted to explore whether a model could help make some of those features visible and usable.
-I chose the Lalita Sahasranama - a Sanskrit hymn text as a practical test. I gave Claude an old-font PDF and three marking conventions I defined: pink for a selected group of consonants, yellow for conjuncts, and green underlining for a long-vowel-bearing unit before a conjunct.
-
-I asked Claude to help build the tool without writing the code myself. my question was broader: could a model interpret explicit linguistic rules, turn them into code, and preserve the source text?
-The experiment involved recovering readable Devanagari from a legacy font, clarifying ambiguous instructions, and revising the programs that applied the markings.
-
-Model and environment: mostly Claude Sonnet 5.5 at medium effort (a few responses ran on Sonnet 4.6), working in an agent environment with shell, file, PDF and document tools.
-Claude proposed the decoding map, wrote the decoder and classifier, and revised the code when I clarified or changed the rules. The programs performed the repeated decoding, marking and rendering. The output text therefore came from executing the decoder, with a mapping proposed by the model; it was not simply a new transcription generated in a chat response.
-The practical value was that I could describe a specialized task and iteratively build a tool. Once the text and rules are verified, a program can apply those rules repeatedly. This project did not require a vector database or retrieval system, and I did not measure its cost.
-
-My key takeaway: language models can help turn language-specific rules into practical tools—with code and outputs checked against trusted examples.
-
+An experiment in whether a language model can help turn explicit Sanskrit rules into a working tool. Claude wrote the programs in this repo; plain scripts, not the model, apply the rules every time.
 
 Read the full write-up: **[Substack link]**
 
@@ -23,7 +10,7 @@ How an LLM such as Claude can work with a language like Sanskrit and produce use
 
 ## 2. What is provided
 
-**The code**, under the MIT License, so anyone can take the idea and extend it.
+**The code**, shared so others can read it, learn from the approach and test the idea. It is not open-source licensed; to reuse or build on it, please contact me (see License below).
 
 | File | What it does |
 |---|---|
@@ -71,5 +58,5 @@ Input must be Unicode Devanagari, one line of text per line. The FreeSerif and F
 
 ## License
 
-- **Code, sample marking and README:** MIT License, see `LICENSE`.
+- **Code, sample marking and README:** Copyright (c) 2026 Yogesh Weling. All rights reserved; no open-source license is granted. You are welcome to read the code and run it locally to evaluate it. If you want to reuse, modify, redistribute or build on it, please get in touch first: open an issue on this repository or contact me through the Substack article linked above.
 - **Sanskrit text:** the Lalita Sahasranama is a traditional text. No license is asserted over the verses in `examples/`; they are a small excerpt shown for demonstration, provided as-is. If you are a rights holder and want the excerpt credited differently or removed, please open an issue.
