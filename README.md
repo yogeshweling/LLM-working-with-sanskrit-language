@@ -1,6 +1,8 @@
-# Can a Language Model Apply Sanskrit Pronunciation Rules? Marking Sanskrit text by pronunciation rules, with a language model's help. An Experiment with the Lalita Sahasranama.
+# Can a Language Model Apply Sanskrit Pronunciation Rules? Marking Sanskrit text by pronunciation rules, with a language model's help. 
 
-A practical experiment in recovering and annotating the Sanskrit text of the Lalita Sahasranama, and what it suggests for other languages.
+
+A practical experiment to explore possibility of making specific linguistic features and the knowledge preserved in texts easier to be available for language usage. An Experiment with the Lalita Sahasranama.
+
 Who this article is for
 
 This is for Sanskrit scholars, teachers, learners and readers interested in the language, as well as people researching or building language models and their applications. Sanskrit readers can examine the text and marking conventions; AI readers can examine how instructions became an executable tool and where errors or uncertainty entered the process. I asked Claude to turn an old-font PDF of the Lalita Sahasranama into color-marked Devanagari using three pronunciation-related rules I defined. The model recognized the text well enough to decode a legacy font that extracted as Latin-looking gibberish, then wrote the programs that decoded and marked the text.
