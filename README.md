@@ -1,15 +1,12 @@
 # Can a Language Model Help Apply Sanskrit Rules?
 
-A practical experiment in using a language model to build a small tool for Sanskrit text, tested on the Lalita Sahasranama. Claude wrote the programs in this repo; the scripts apply the marking rules when run.
+A practical experiment in using a language model to build a small tool for Sanskrit text, applied to the Lalita Sahasranama. Claude wrote the programs in this repo; the scripts apply the marking rules when run.
 
-## Status: please read
+## Status
 
-**Experimental output — unverified.** The decoded Sanskrit text and marking conventions have not been reviewed by a Sanskrit teacher. Verify them before using the output as a pronunciation or chanting aid.
+**Experimental output.** The full Lalita Sahasranama text was converted and marked; this repository includes a 10-verse sample. The decoded text and markings have not been reviewed by a Sanskrit teacher, so please verify them before relying on the output.
 
-- The classifier has been tested only on this stotra and a short sample. Its behavior on other Unicode Devanagari text is untested. You are welcome to evaluate it locally and open an issue with failures.
-- The output counts are not accuracy scores. A program can repeat an error consistently.
-- The ten verses in the sample were decoded from a PDF whose edition is not identified, and have not been compared with a trusted edition. Treat them as illustrative.
-- This experiment does not establish general Sanskrit proficiency or demonstrate improved pronunciation or chanting.
+The classifier can also be tried on other Sanskrit texts in Unicode Devanagari using the same marking rules. It has not yet been evaluated on those texts.
 
 ## Who this is for
 
@@ -51,7 +48,11 @@ The implementation assumes continuous reading: a long-vowel-bearing unit at the 
 
 ## 3. Evidence
 
-A snapshot only: the marked output for verses 1 to 10.
+The full Lalita Sahasranama source was converted to Unicode Devanagari and annotated, including the opening sections, all 183 numbered verses and closing lines. This repository provides a representative sample of verses 1–10; the full converted and marked output is not included.
+
+The classifier accepts Unicode Devanagari text and can be tried on other passages using the same marking conventions. Its correctness on other texts has not yet been evaluated.
+
+The included files are:
 
 - `examples/verses_1-10_input.txt`: the ten verses as Unicode text
 - `examples/verses_1-10_marked.html` and `.png`: the marked result
@@ -59,7 +60,7 @@ A snapshot only: the marked output for verses 1 to 10.
 
 ![Illustrative unverified color markings for verses 1 to 10](examples/verses_1-10_marked.png)
 
-The source PDF and the full decoded and marked files are intentionally not included. The examples allow inspection of the marking approach; they do not establish the fidelity of the full decoding process.
+The source PDF is not included. The examples show the marking approach; applying the classifier to the full text does not establish that every character or marking is correct.
 
 ## Run it on your own text
 
